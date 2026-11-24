@@ -31,3 +31,4 @@ Thumbs.db
 # Данные (локальная БД, медиа)
 postgres_data/
 media/
+fixtures/
