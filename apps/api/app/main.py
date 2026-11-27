@@ -8,7 +8,7 @@ from sqlalchemy import text
 
 from app.config import settings
 from app.database import engine
-from app.routers import auth, telemetry
+from app.routers import auth, telemetry, feed
 
 logger = logging.getLogger(__name__)
 
@@ -49,6 +49,12 @@ app.include_router(
     auth.router,
     prefix=f"{settings.API_V1_STR}/cabinet/auth",
     tags=["cabinet:auth"],
+)
+
+app.include_router(
+    feed.router,
+    prefix=f"{settings.API_V1_STR}/cabinet/feed",
+    tags=["cabinet:feed"]
 )
 
 app.include_router(

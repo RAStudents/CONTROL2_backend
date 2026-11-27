@@ -1,10 +1,8 @@
-# Виртуальное окружение
 .venv/
 venv/
 env/
 .vs/
 
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -13,10 +11,8 @@ __pycache__/
 .pytest_cache/
 .coverage
 
-# Переменные окружения
 .env
 
-# Настройки IDE
 .vscode/
 .idea/
 *.pyproj
@@ -24,11 +20,11 @@ __pycache__/
 *.user
 *.slnx
 
-# OS
+
 .DS_Store
 Thumbs.db
 
-# Данные (локальная БД, медиа)
 postgres_data/
 media/
 fixtures/
+web/
